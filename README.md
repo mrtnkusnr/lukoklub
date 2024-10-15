@@ -11,6 +11,6 @@ Welcome to **Lukoklub**, a website built for our local archery club using **Reac
 
 ---
 
-### 📸 Logo
-![Lukoklub Logo designed by @mrtnkusnr](src/assets/logo.png)
+### 📸 Logo (designed by @mrtnkusnr)
+![Lukoklub Logo designed by @mrtnkusnr](src/assets/logo.svg)
 
