@@ -7,13 +7,13 @@ const SectionCoaches = () => {
   return (
     <div className="mt-24">
       <div className="flex flex-col text-center items-center">
-        <span className="mt-24 text-6xl">Spoznajte našich trénerov</span>
-        <span className="text-lg p-6 max-w-4xl ">
+        <h1 className="mt-24 text-6xl">Spoznajte našich trénerov</h1>
+        <h2 className="text-lg p-6 max-w-4xl ">
           Lukoklub Košice zabezpečuje výučbu svojich členov prostredníctvom
           kvalifikovaných trénerov a rozhodcov s dlhoročnými skúsenosťami -
           okrem nich sa však na tréningoch stretnete aj s mnohými nadšencami pre
           lukostreľbu všetkých vekových kategórií
-        </span>
+        </h2>
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-24 mt-24">

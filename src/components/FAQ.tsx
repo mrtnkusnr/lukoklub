@@ -24,7 +24,7 @@ const faqs: FAQs[] = [
   {
     question: "Aké vybavenie na lukostreľbu potrebujem?",
     answer:
-      "Začiatočníkom poskytujeme všetko potrebné vybavenie, vrátane lukov, šípov, chráničov a ďalších tréningových pomôcok. Ak sa rozhodnete venovať športu dlhodobo, radi vám poradíme pri výbere vlastného luku a príslušenstva. Ak máte záujem začať už s vlastným vybavením, ponúkame konzultácie pred nákupom, aby ste si vybrali to správne.",
+      "Začiatočníkom poskytujeme všetko potrebné vybavenie, vrátane lukov, šípov, chráničov a ďalších tréningových pomôcok. Ak sa rozhodnete venovať športu dlhodobo, radi vám poradíme pri výbere vlastného luku a príslušenstva. Ak máte záujem začať už s vlastným vybavením, ponúkame konzultácie pred nákupom, aby ste si vybrali to správne. Za vypožičané náradie ručí strelec, preto žiadame o bezpečné a diskrétne zaobchádzanie. S prípadnou stratou alebo poškodením šípov však ako klub počítame.",
   },
   { question: "Kde a kedy prebiehajú tréningy?", answer: "TBD" },
   {
@@ -35,7 +35,7 @@ const faqs: FAQs[] = [
   {
     question: "Naučím sa za 3 mesiace strieľať?",
     answer:
-      "Progres je individuálny a závisí od mnohých faktorov - fyzických schopností, dochádzky, snahy. Vo všeobecnosti však platí, že za 3 mesiace dokážete získať základné zručnosti v narábaní s lukom, pochopiť podstaty techniky a získať predstavu o tom, čo lukostreľba zahŕňa. Zároveň si overíte, či vás tento šport baví a či by ste ho chceli praktizovať vo voľnom čase, napríklad aj u seba na záhrade alebo chate.",
+      "Progres je individuálny a závisí od mnohých faktorov - fyzických schopností, dochádzky, snahy. Vo všeobecnosti však platí, že za 3 mesiace dokážete získať základné zručnosti v narábaní s lukom a v spravovaní lukostreleckého náriadia, dokážete pochopiť podstaty techniky a získať predstavu o tom, čo lukostreľba zahŕňa. Zároveň si overíte, či vás tento šport baví a či by ste ho chceli praktizovať vo voľnom čase, napríklad aj u seba na záhrade alebo chate.",
   },
   {
     question: "Je lukostreľba nebezpečná?",
@@ -62,15 +62,26 @@ const faqs: FAQs[] = [
 
 const FAQ = () => {
   return (
-    <div className="rounded-lg p-6">
-      <div className="text-6xl pb-6">Často kladené otázky</div>
-      {faqs.map((faq, index) => (
-        <Accordion
-          key={index}
-          question={faq.question}
-          answer={faq.answer}
-        ></Accordion>
-      ))}
+    <div className="p-6 ">
+      <div className="flex flex-col text-center items-center">
+        <h1 className="text-6xl">Často kladené otázky</h1>
+        <h2 className="text-lg pt-6 max-w-4xl">
+          Máte otázku? Nezúfajte! Možno už niekto pred vami premýšľal nad tým
+          istým. Prečítajte si naše Často kladené otázky, kde sme už zodpovedali
+          všetko možné aj nemožné – od toho, ako správne napnúť tetivu, až po
+          to, čo sa stane, keď šíp zablúdi. Ak tu odpoveď nenájdete, potom ste
+          práve vytvorili novú často kladenú otázku!
+        </h2>
+      </div>
+      <div className="mt-12">
+        {faqs.map((faq, index) => (
+          <Accordion
+            key={index}
+            question={faq.question}
+            answer={faq.answer}
+          ></Accordion>
+        ))}
+      </div>
     </div>
   );
 };
