@@ -6,7 +6,7 @@ const Banner = () => {
     <div className="relative w-full h-full">
       <img
         src={Home1}
-        className="object-cover w-full h-[47rem] grayscale opacity-[6%]"
+        className="object-cover w-full h-[47rem] grayscale opacity-[6%] "
         alt="Background"
       />
 

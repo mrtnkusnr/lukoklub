@@ -64,7 +64,7 @@ const FAQ = () => {
   return (
     <div className="p-6 ">
       <div className="flex flex-col text-center items-center">
-        <h1 className="text-6xl">Často kladené otázky</h1>
+        <h1 className="text-5xl font-semibold">Často kladené otázky</h1>
         <h2 className="text-lg pt-6 max-w-4xl">
           Máte otázku? Nezúfajte! Možno už niekto pred vami premýšľal nad tým
           istým. Prečítajte si naše Často kladené otázky, kde sme už zodpovedali

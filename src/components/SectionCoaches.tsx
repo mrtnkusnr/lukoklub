@@ -7,7 +7,9 @@ const SectionCoaches = () => {
   return (
     <div className="mt-24">
       <div className="flex flex-col text-center items-center">
-        <h1 className="mt-24 text-6xl">Spoznajte našich trénerov</h1>
+        <h1 className="mt-24 text-5xl font-semibold">
+          Spoznajte našich trénerov
+        </h1>
         <h2 className="text-lg p-6 max-w-4xl ">
           Lukoklub Košice zabezpečuje výučbu svojich členov prostredníctvom
           kvalifikovaných trénerov a rozhodcov s dlhoročnými skúsenosťami -
