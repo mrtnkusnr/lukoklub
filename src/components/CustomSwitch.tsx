@@ -21,20 +21,18 @@ const CustomSwitch: React.FC<CustomSwitchProps> = ({
   };
 
   return (
-    <div className="w-fit border border-gray-200 rounded-sm text-center items-center">
+    <div className="rounded-sm shadow-sm text-lg">
       <button
         onClick={() => handleClick(1)}
         className={`
-        
           transition-colors
           duration-200
           py-2 px-4 
           rounded-l-sm
-          
           ${
             selected === 1
-              ? "bg-orange-500  text-white "
-              : "bg-white hover:text-orange-500 text-slate-600 "
+              ? "bg-orange-50 font-semibold  text-orange-500 border border-orange-500"
+              : "bg-white text-slate-600 border-l border-t border-b border-gray-200"
           }
         `}
       >
@@ -43,15 +41,14 @@ const CustomSwitch: React.FC<CustomSwitchProps> = ({
       <button
         onClick={() => handleClick(2)}
         className={`
-        
           transition-colors
           duration-200
           py-2 px-4 
-          rounded-r -sm
+          rounded-r-sm
           ${
             selected === 2
-              ? "bg-orange-500 text-white"
-              : "bg-white hover:text-orange-500 text-slate-600 "
+              ? "bg-orange-50 font-semibold  text-orange-500 border border-orange-500"
+              : "bg-white text-slate-600 border-r border-t border-b border-gray-200"
           }
         `}
       >

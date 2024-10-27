@@ -50,23 +50,23 @@ const Trainings = () => {
       <div className="flex flex-col items-center p-6 mt-24">
         <CustomSwitch
           option1={
-            <div className="flex flex-row">
+            <div className="flex flex-row sm:px-14 justify-center items-center">
               <span className="material-symbols-outlined">sunny</span>
-              <span className="pl-1"> Letná sezóna </span>
+              <span className="pl-2"> Letná sezóna </span>
             </div>
           }
           option2={
-            <div className="flex flex-row">
+            <div className="flex flex-row sm:px-14 justify-center items-center">
               <span className="material-symbols-outlined">ac_unit</span>
-              <span className="pl-1"> Zimná sezóna </span>
+              <span className="pl-2"> Zimná sezóna </span>
             </div>
           }
           defaultValue={1}
           onChange={(value) => console.log(value)}
         />
+        <TrainingsSummer />
       </div>
 
-      <TrainingsSummer />
       <TrainingsWinter />
     </>
   );
