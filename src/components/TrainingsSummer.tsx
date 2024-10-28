@@ -1,6 +1,5 @@
 const TrainingsSummer = () => {
-  const summerLocation =
-    "Bývalý areál Vojenskej leteckej akadémie generála Milana Rastislava Štefánika, Rampová 7, Košice";
+  const summerLocation = "Rampová 7, Košice";
 
   const summerDateRange = "9. máj - 1. júl";
   const summerSchedule = "16:30 - 18:00";
@@ -10,34 +9,33 @@ const TrainingsSummer = () => {
     <div className="p-6 mt-24">
       <div className="flex flex-col text-center items-center border border-gray-200 w-[36rem] shadow-sm">
         <h1 className="text-5xl font-semibold my-8">Letná sezóna</h1>
-
-        <div className="flex flex-col gap-6 sm:gap-2 my-8">
-          <div className="flex flex-col items-center sm:items-start sm:flex-row">
-            <div className="flex items-center">
-              <span className="material-symbols-outlined">date_range</span>
-              <span className="px-2 font-semibold">Dátumy:</span>
-            </div>
+        <div className="flex sm:flex-row gap-6 sm:gap-3 my-2 w-48 items-center">
+          <span className="material-symbols-outlined text-4xl">date_range</span>
+          <div className="flex flex-col items-start">
+            <span className="font-semibold text-lg">Dátumy:</span>
             <span className="sm:text-left"> {summerDateRange}</span>
           </div>
-          <div className="flex flex-col items-center sm:items-start sm:flex-row">
-            <div className="flex items-center">
-              <span className="material-symbols-outlined">schedule</span>
-              <span className="px-2 font-semibold">Čas:</span>
-            </div>
+        </div>
+        <div className="flex sm:flex-row gap-6 sm:gap-3 my-2 w-48 items-center">
+          <span className="material-symbols-outlined text-4xl">schedule</span>
+          <div className="flex flex-col items-start">
+            <span className="font-semibold text-lg">Čas:</span>
             <span className="sm:text-left"> {summerSchedule}</span>
           </div>
-          <div className="flex flex-col items-center sm:items-start sm:flex-row">
-            <div className="flex items-center">
-              <span className="material-symbols-outlined">target</span>
-              <span className="px-2 font-semibold">Dni v týždni:</span>
-            </div>
+        </div>
+        <div className="flex sm:flex-row gap-6 sm:gap-3 my-2 w-48 items-center">
+          <span className="material-symbols-outlined text-4xl">target</span>
+          <div className="flex flex-col items-start">
+            <span className="font-semibold text-lg">Dni:</span>
             <span className="sm:text-left"> {summerDays}</span>
           </div>
-          <div className="flex flex-col items-center sm:items-start sm:flex-row">
-            <div className="flex items-center">
-              <span className="material-symbols-outlined">location_on</span>
-              <span className="px-2 font-semibold">Miesto:</span>
-            </div>
+        </div>
+        <div className="flex sm:flex-row gap-6 sm:gap-3 my-2 w-48 items-center">
+          <span className="material-symbols-outlined text-4xl">
+            location_on
+          </span>
+          <div className="flex flex-col items-start">
+            <span className="font-semibold text-lg">Miesto:</span>
             <span className="sm:text-left"> {summerLocation}</span>
           </div>
         </div>
