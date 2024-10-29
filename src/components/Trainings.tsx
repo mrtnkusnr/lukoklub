@@ -62,12 +62,13 @@ const Trainings = () => {
             </div>
           }
           defaultValue={1}
-          onChange={(value) => console.log(value)}
+          renderComponent={(value: 1 | 2) => {
+            return value === 1
+              ? () => <TrainingsSummer />
+              : () => <TrainingsWinter />;
+          }}
         />
-        <TrainingsSummer />
       </div>
-
-      <TrainingsWinter />
     </>
   );
 };

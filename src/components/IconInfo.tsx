@@ -10,7 +10,7 @@ const IconInfo: React.FC<IconInfoProps> = ({ icon, header, desc }) => {
       <span className="material-symbols-outlined text-5xl">{icon}</span>
       <div className="flex flex-col items-start">
         <span className="font-semibold text-lg">{header}</span>
-        <span className="sm:text-left  max-w-xl">{desc}</span>
+        <span className="sm:text-left max-w-xl">{desc}</span>
       </div>
     </div>
   );
