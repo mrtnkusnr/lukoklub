@@ -1,13 +1,14 @@
 import CustomSwitch from "./CustomSwitch";
 import TrainingsSummer from "./TrainingsSummer";
 import TrainingsWinter from "./TrainingsWinter";
+import Heading from "./Heading";
 
 const Trainings = () => {
   return (
     <>
       <div className="py-16 bg-gradient-to-b from-transparent to-gray-50 border-b border-gray-100">
         <div className="flex flex-col text-center items-center ">
-          <h1 className="text-5xl font-semibold">Tréningy</h1>
+          <Heading title="Tréningy"></Heading>
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-24 my-12">

@@ -1,4 +1,5 @@
 import IconInfo from "./IconInfo";
+import Heading from "./Heading";
 
 const TrainingsWinter = () => {
   const winterDateRange = "01. nov - 09. máj";
@@ -10,7 +11,7 @@ const TrainingsWinter = () => {
   return (
     <div className="mt-24">
       <div className="flex flex-col text-center items-center p-10 border border-gray-200 shadow-sm ">
-        <h1 className="text-5xl font-semibold mt-6 mb-14">Zimná sezóna</h1>
+        <Heading title="Zimná sezóna"></Heading>
         <div className="flex flex-row w-full justify-between pb-12 border-b-2">
           <IconInfo icon="date_range" header="Dátumy" desc={winterDateRange} />
           <IconInfo icon="today" header="Dni v týždni" desc={winterDays} />

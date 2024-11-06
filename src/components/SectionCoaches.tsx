@@ -2,14 +2,13 @@ import Coach from "./Coach";
 import CoachMartinKusnir from "../assets/coach-mk.jpg";
 import CoachMarekPancisin from "../assets/coach-mp.jpg";
 import CoachMarekReisinger from "../assets/coach-mr.jpg";
+import Heading from "./Heading";
 
 const SectionCoaches = () => {
   return (
     <div className="mt-24">
       <div className="flex flex-col text-center items-center">
-        <h1 className="mt-24 text-5xl font-semibold">
-          Spoznajte našich trénerov
-        </h1>
+        <Heading title="Spoznajte našich trénerov"></Heading>
         <h2 className="text-lg p-6 max-w-4xl ">
           Lukoklub Košice zabezpečuje výučbu svojich členov prostredníctvom
           kvalifikovaných trénerov a rozhodcov s dlhoročnými skúsenosťami -
