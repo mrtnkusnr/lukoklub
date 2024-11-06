@@ -1,4 +1,6 @@
 import Input from "./Input";
+import TextArea from "./TextArea";
+import DateInput from "./DateInput";
 
 const ApplicationPage = () => {
   return (
@@ -20,16 +22,28 @@ const ApplicationPage = () => {
           placeholder="Enter your email"
         ></Input>
 
-        <div className="mb-4">
-          <label className="block mb-2" htmlFor="message">
-            Message
-          </label>
-          <textarea
-            className="border rounded-sm w-full py-2 px-3 leading-tight focus:border-orange-500 focus:ring-0 focus:outline-none"
-            id="message"
-            placeholder="Enter your message"
-          ></textarea>
-        </div>
+        <Input
+          htmlFor="phone"
+          label="Phone"
+          id="phone"
+          type="text"
+          placeholder="Enter your phone number"
+        ></Input>
+
+        <DateInput
+          htmlFor="date-input"
+          label="Date"
+          id="date-input"
+          type="date"
+        ></DateInput>
+
+        <TextArea
+          htmlFor="message"
+          label="Message"
+          id="message"
+          placeholder="Enter your message"
+        ></TextArea>
+
         <div className="flex items-center justify-between">
           <button
             className="bg-orange-500 hover:bg-orange-600  text-white py-2 px-4 rounded-sm-sm"
