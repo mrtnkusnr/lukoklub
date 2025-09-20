@@ -5,6 +5,7 @@ interface Props {
   label: string;
   id: string;
   type: string;
+  className?: string;
 }
 
 const DateInput = ({ htmlFor, label, id, type }: Props) => {

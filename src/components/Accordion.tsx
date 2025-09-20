@@ -9,7 +9,7 @@ const Accordion = ({ question, answer }: Props) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <div className="mb-6 border border-gray-200 rounded-md shadow-sm">
+    <div className="lg:max-w-[1019px] lg:min-w-[1019px] mb-6 border border-gray-200 rounded-md shadow-md max-w-">
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex justify-between w-full p-4"
@@ -42,7 +42,7 @@ const Accordion = ({ question, answer }: Props) => {
         </svg>
       </button>
       <div
-        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-sm ${
+        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-gray-800 text-sm ${
           accordionOpen
             ? "grid-rows-[1fr] opacity-100 pb-4 pr-4 pl-4"
             : "grid-rows-[0fr] opacity-0"

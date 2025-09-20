@@ -63,7 +63,7 @@ const faqs: FAQs[] = [
 
 const FAQ = () => {
   return (
-    <div className="p-6 ">
+    <div className="p-6">
       <div className="flex flex-col text-center items-center">
         <Heading title="Často kladené otázky"></Heading>
         <h2 className="text-lg pt-6 max-w-4xl">
@@ -74,7 +74,7 @@ const FAQ = () => {
           práve vytvorili novú často kladenú otázku!
         </h2>
       </div>
-      <div className="mt-12">
+      <div className="flex flex-col items-center mt-12">
         {faqs.map((faq, index) => (
           <Accordion
             key={index}

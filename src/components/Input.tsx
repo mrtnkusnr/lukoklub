@@ -4,6 +4,7 @@ interface Props {
   id: string;
   type?: string;
   placeholder: string;
+  className?: string;
 }
 
 const Input = ({ htmlFor, label, id, type, placeholder }: Props) => {

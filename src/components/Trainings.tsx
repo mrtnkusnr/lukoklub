@@ -48,7 +48,7 @@ const Trainings = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center p-6 mt-24">
+      <div className="flex flex-col w-full items-center p-6 mt-24">
         <CustomSwitch
           option1={
             <div className="flex flex-row sm:px-14 justify-center items-center">

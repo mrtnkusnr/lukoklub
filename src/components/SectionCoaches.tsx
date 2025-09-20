@@ -19,8 +19,8 @@ const SectionCoaches = () => {
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-24 mt-24">
         <Coach name="Marek Reisinger" imageUrl={CoachMarekReisinger} />
-        <Coach name="Marek Pančišin" imageUrl={CoachMarekPancisin} />
         <Coach name="Martin Kušnír" imageUrl={CoachMartinKusnir} />
+        <Coach name="Marek Pančišin" imageUrl={CoachMarekPancisin} />
       </div>
     </div>
   );

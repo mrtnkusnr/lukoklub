@@ -12,7 +12,7 @@ const Banner = () => {
 
       <div className="absolute inset-0 flex flex-col items-center space-y-4 mt-12">
         <img src={Logo} className="w-3/5 max-h-96 sm:h-fit"></img>
-        <h2 className="text-lg text-slate-600 max-w-4xl text-center p-6">
+        <h2 className="text-lg text-gray-800 max-w-4xl text-center p-6">
           Vstúpte do fascinujúceho sveta lukostreľby a objavte šport, ktorý
           kombinuje presnosť, sústredenie a zábavu – šport, kde každý výstrel je
           príležitosťou na zlepšenie seba samého
@@ -26,7 +26,7 @@ const Banner = () => {
             </span>
           </button>
 
-          <button className="bg-white text-slate-600 border border-gray-200 rounded-sm shadow-sm font-medium py-2 px-4">
+          <button className="bg-white text-gray-800 border border-gray-200 rounded-sm shadow-sm font-medium py-2 px-4">
             Lukoklub since 1996
           </button>
         </div>

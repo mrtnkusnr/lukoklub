@@ -3,6 +3,7 @@ interface Props {
   label: string;
   id: string;
   placeholder: string;
+  className?: string;
 }
 
 const TextArea = ({ htmlFor, label, id, placeholder }: Props) => {
