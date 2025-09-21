@@ -1,4 +1,4 @@
-import IconInfo from "./IconInfo";
+import InfoIcon from "./InfoIcon";
 
 const TrainingsSummer = () => {
   const summerLocation =
@@ -18,9 +18,9 @@ const TrainingsSummer = () => {
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full mb-12 border-b-2 pb-12">
-          <IconInfo icon="date_range" header="Dátumy" desc={summerDateRange1} />
-          <IconInfo icon="today" header="Dni v týždni" desc={summerDays} />
-          <IconInfo
+          <InfoIcon icon="date_range" header="Dátumy" desc={summerDateRange1} />
+          <InfoIcon icon="today" header="Dni v týždni" desc={summerDays} />
+          <InfoIcon
             icon="schedule"
             header="Čas tréningu"
             desc={summerSchedule1}
@@ -28,9 +28,9 @@ const TrainingsSummer = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full mb-12 border-b-2 pb-12">
-          <IconInfo icon="date_range" header="Dátumy" desc={summerDateRange2} />
-          <IconInfo icon="event" header="Dni v týždni" desc={summerDays} />
-          <IconInfo
+          <InfoIcon icon="date_range" header="Dátumy" desc={summerDateRange2} />
+          <InfoIcon icon="event" header="Dni v týždni" desc={summerDays} />
+          <InfoIcon
             icon="schedule"
             header="Čas tréningu"
             desc={summerSchedule2}
@@ -38,7 +38,7 @@ const TrainingsSummer = () => {
         </div>
 
         <div className="w-full mb-12">
-          <IconInfo icon="location_on" header="Miesto" desc={summerLocation} />
+          <InfoIcon icon="location_on" header="Miesto" desc={summerLocation} />
         </div>
 
         <iframe

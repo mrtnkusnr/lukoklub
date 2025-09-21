@@ -1,10 +1,10 @@
-interface IconInfoProps {
+interface InfoIconProps {
   icon: string;
   header: string;
-  desc: string;
+  desc: string | JSX.Element;
 }
 
-const IconInfo: React.FC<IconInfoProps> = ({ icon, header, desc }) => {
+const InfoIcon: React.FC<InfoIconProps> = ({ icon, header, desc }) => {
   return (
     <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 p-5 lg:min-w-[291px] bg-white border border-gray-200 rounded-md shadow-sm hover:shadow-md transition-shadow duration-200">
       <span className="material-symbols-outlined text-5xl text-orange-500 flex-shrink-0">
@@ -21,4 +21,4 @@ const IconInfo: React.FC<IconInfoProps> = ({ icon, header, desc }) => {
   );
 };
 
-export default IconInfo;
+export default InfoIcon;

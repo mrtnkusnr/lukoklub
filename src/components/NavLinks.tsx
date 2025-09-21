@@ -5,7 +5,7 @@ const NavLinks = () => {
     { title: "Domov", route: "/" },
     { title: "Tréningy", route: "/treningy" },
     { title: "Prihláška", route: "/prihlaska" },
-    { title: "Galéria", route: "/galeria" },
+    // { title: "Galéria", route: "/galeria" },
     { title: "Kontakt", route: "/kontakt" },
   ];
   return (

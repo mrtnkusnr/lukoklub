@@ -1,78 +1,38 @@
-import Input from "./Input";
-import TextArea from "./TextArea";
-import DateInput from "./DateInput";
 import Heading from "./Heading";
-
-import { motion } from "framer-motion";
+import PricingInfo from "./PricingInfo";
+import ApplicationForm from "./ApplicationForm";
 
 const ApplicationPage = () => {
   return (
     <>
-      <Heading title="Prihláška" />
+      <div className="py-16 bg-gradient-to-b from-transparent to-gray-50 border-b border-gray-100">
+        <div className="flex flex-col text-center items-center ">
+          <Heading title="Poplatky a prihláška"></Heading>
+          <h2 className="text-lg text-gray-800 max-w-4xl text-center p-6">
+            V tejto sekcii nájdete všetky potrebné informácie pre účasť na
+            tréningoch v Lukoklube Košice – prvotný kurz, podmienky a výhody
+            vstupu, výška členského, cenník tréningov a vysvetlenie, čo
+            jednotlivé poplatky zahŕňajú. Táto časť slúži ako rýchly prehľad,
+            aby ste sa vedeli jednoducho zorientovať a vybrať si možnosť, ktorá
+            vám najviac vyhovuje.
+          </h2>
+        </div>
+      </div>
 
-      <div className="flex justify-center py-10 px-4">
-        <motion.form
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          className="bg-white border border-gray-100 shadow-xl rounded-2xl px-8 pt-8 pb-10 w-full max-w-lg"
-        >
-          <div className="space-y-6">
-            <Input
-              htmlFor="name"
-              label="Name"
-              id="name"
-              type="text"
-              placeholder="Enter your name"
-              className="rounded-xl border-gray-300 focus:border-orange-500 focus:ring focus:ring-orange-200 transition"
-            />
+      <div className="flex flex-col md:flex-row items-center justify-center gap-24 my-12">
+        <PricingInfo></PricingInfo>
+      </div>
 
-            <Input
-              htmlFor="email"
-              label="Email"
-              id="email"
-              type="email"
-              placeholder="Enter your email"
-              className="rounded-xl border-gray-300 focus:border-orange-500 focus:ring focus:ring-orange-200 transition"
-            />
+      <Heading title="Prihláška"></Heading>
 
-            <Input
-              htmlFor="phone"
-              label="Phone"
-              id="phone"
-              type="text"
-              placeholder="Enter your phone number"
-              className="rounded-xl border-gray-300 focus:border-orange-500 focus:ring focus:ring-orange-200 transition"
-            />
-
-            <DateInput
-              htmlFor="date-input"
-              label="Date"
-              id="date-input"
-              type="date"
-              className="rounded-xl border-gray-300 focus:border-orange-500 focus:ring focus:ring-orange-200 transition"
-            />
-
-            <TextArea
-              htmlFor="message"
-              label="Message"
-              id="message"
-              placeholder="Enter your message"
-              className="rounded-xl border-gray-300 focus:border-orange-500 focus:ring focus:ring-orange-200 transition"
-            />
-
-            <div className="pt-4">
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold py-3 px-6 rounded-sm shadow-md hover:shadow-lg transition-all"
-                type="submit"
-              >
-                Submit
-              </motion.button>
-            </div>
-          </div>
-        </motion.form>
+      <div className="flex flex-col items-center py-10 px-4">
+        <h2 className="text-lg pt-6 max-w-4xl text-center">
+          Prihláste sa na 3-mesačný základný kurz cez tento formulár — po
+          odoslaní Vás budeme informovať o dosutpných termínoch. Formulár môžete
+          využiť aj v prípade záujmu o jednorazový tréning, spoluprácu alebo
+          firemnú akciu.
+        </h2>
+        <ApplicationForm />
       </div>
     </>
   );

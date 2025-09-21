@@ -1,4 +1,4 @@
-import IconInfo from "./IconInfo";
+import InfoIcon from "./InfoIcon";
 import Heading from "./Heading";
 
 const TrainingsWinter = () => {
@@ -14,9 +14,9 @@ const TrainingsWinter = () => {
         <Heading title="Zimná sezóna"></Heading>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full mb-12 border-b-2 pb-12">
-          <IconInfo icon="date_range" header="Dátumy" desc={winterDateRange} />
-          <IconInfo icon="today" header="Dni v týždni" desc={winterDays} />
-          <IconInfo
+          <InfoIcon icon="date_range" header="Dátumy" desc={winterDateRange} />
+          <InfoIcon icon="today" header="Dni v týždni" desc={winterDays} />
+          <InfoIcon
             icon="schedule"
             header="Čas tréningu"
             desc={winterSchedule}
@@ -24,7 +24,7 @@ const TrainingsWinter = () => {
         </div>
 
         <div className="w-full mb-12">
-          <IconInfo icon="location_on" header="Miesto" desc={winterLocation} />
+          <InfoIcon icon="location_on" header="Miesto" desc={winterLocation} />
         </div>
 
         <iframe

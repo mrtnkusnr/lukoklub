@@ -20,7 +20,7 @@ const faqs: FAQs[] = [
   {
     question: "Zúčastňujete sa ako klub súťaží?",
     answer:
-      "Môžeme zo skúseností povedať, že väčšina našich členov preferuje lukostreľbu ako hobby, nie ako súťažný šport. Súťaženie na vyššej úrovni vyžaduje kondičnú prípravu a časovú náročnosť, čo je pre mnohých členov komplikované. Napriek tomu, Lukoklub Košice je dlhoročným členom Slovenského lukostreleckého zväzu a ak máte záujem, radi vás dokážeme podporiť aj v účasti na slovenských súťažiach. Spolupracujeme aj s Lukostreleckým klubom Jasov, ktorý sa špecializuje na výchovu profesionálnych lukostrelcov a reprezentantov.",
+      "Môžeme zo skúseností povedať, že väčšina našich členov preferuje lukostreľbu ako hobby, nie ako súťažný šport. Súťaženie na vyššej úrovni vyžaduje kondičnú prípravu a časovú náročnosť, čo je pre mnohých členov komplikované. Napriek tomu, Lukoklub Košice je dlhoročným členom Slovenského lukostreleckého zväzu a ak máte záujem, radi vás dokážeme podporiť aj v účasti na slovenských súťažiach. Spolupracujeme aj s Lukostreleckým klubom Jasov, ktorý sa špecializuje na výchovu profesionálnych lukostrelcov a reprezentantov. V prípade ak u nás zistíte, že máte záujem o vyššiu úroveň lukostreľby než je forma hobby, pripravíme Vás nás úspešný prechod.",
   },
   {
     question: "Aké vybavenie na lukostreľbu potrebujem?",
